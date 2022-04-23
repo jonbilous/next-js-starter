@@ -1,33 +1,25 @@
-import { useUser } from "@auth0/nextjs-auth0";
-import { Flex, HStack, Text, VStack } from "@chakra-ui/react";
+import { client } from "@jonbilous/next-js-rpc";
+import type { InferResponse } from "@jonbilous/next-js-rpc";
 import type { GetServerSideProps, NextPage } from "next";
+import type { ImageQuery } from "pages/api/functions";
+import getImages from "pages/api/functions";
 
-interface ServerProps {}
+type ServerProps = {
+  locations: InferResponse<ImageQuery>;
+};
 
 export const getServerSideProps: GetServerSideProps<ServerProps> = async (
-  req
+  ctx
 ) => {
-  return { props: {} };
+  const locations = await getImages.ssr(null, ctx);
+
+  return { props: { locations } };
 };
 
 const Home: NextPage<ServerProps> = (props) => {
-  const user = useUser();
+  const query = client.useQuery<ImageQuery>("/api/functions", null);
 
-  return (
-    <VStack alignItems={"stretch"}>
-      <Flex padding={4}>
-        <HStack>
-          <Text fontWeight={"bold"}>Next JS Starter</Text>
-        </HStack>
-
-        <HStack ml="auto">
-          <div>{user.user?.email}</div>
-          {!user.user && <a href="/api/auth/login">Login</a>}
-          {user.user && <a href="/api/auth/logout">Logout</a>}
-        </HStack>
-      </Flex>
-    </VStack>
-  );
+  return <div></div>;
 };
 
 export default Home;
