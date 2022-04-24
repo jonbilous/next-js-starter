@@ -1,5 +1,5 @@
-import { createHandler } from "@jonbilous/next-js-rpc/";
 import { getUserSession } from "utils/ctx";
+import api from "utils/api";
 import db from "utils/db";
 import zod from "zod";
 
@@ -9,7 +9,7 @@ const ctx = {
 
 const schema = zod.null();
 
-const getImages = createHandler({
+const getImages = api.createHandler({
   url: "/api/functions",
   fn: async (params, ctx) => {
     return db.image.findMany();

@@ -937,15 +937,15 @@
   "resolved" "https://registry.npmjs.org/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz"
   "version" "1.2.1"
 
-"@jonbilous/next-js-rpc@^1.12.0":
-  "integrity" "sha512-o1YTvkyEB+JQfCvR+R2Ie//MtzWlqvkIFbmx5n4MV3XC0FnmoAjWsNIonL414TQLpI/2gXfBWOWXmMxwBloa1g=="
-  "resolved" "https://registry.npmjs.org/@jonbilous/next-js-rpc/-/next-js-rpc-1.12.0.tgz"
-  "version" "1.12.0"
+"@jonbilous/next-js-rpc@^1.15.1":
+  "integrity" "sha512-g/yCqVltIpjwjMw7bgxHzQOvCGLNmHtsGpWPK7M5GgDLeOy3Eu+HnNQmbESAFSrf6gRwl+6hgSpmmEJqO/dQnQ=="
+  "resolved" "https://registry.npmjs.org/@jonbilous/next-js-rpc/-/next-js-rpc-1.15.1.tgz"
+  "version" "1.15.1"
 
-"@jonbilous/utils@^1.0.0":
-  "integrity" "sha512-NWjP0dkqmm8KpsfB4QTzXyR8DHVYwdz45dIjgOIBeZqE+Ei3PBstel0NIz2kQUZHDsgMDgW9xW5rR4mBleevWg=="
-  "resolved" "https://registry.npmjs.org/@jonbilous/utils/-/utils-1.0.0.tgz"
-  "version" "1.0.0"
+"@jonbilous/utils@^1.2.0":
+  "integrity" "sha512-mLqkCDyNizq5ESx5If+brpTrgFDD2zW1/TZ7mTyhqKCJX95g9fvLkRVV1g4bOGsPdczPv/GCxXS76AAxRYQqtg=="
+  "resolved" "https://registry.npmjs.org/@jonbilous/utils/-/utils-1.2.0.tgz"
+  "version" "1.2.0"
 
 "@jridgewell/resolve-uri@^3.0.3":
   "integrity" "sha512-VPeQ7+wH0itvQxnG+lIzWgkysKIr3L9sslimFW55rHMdGu/qCQ5z5h9zq4gI8uBtqkpHhsF4Z/OwExufUCThew=="
