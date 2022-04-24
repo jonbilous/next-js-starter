@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "npx prisma migrate deploy && npx prisma generate && next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "next lint && tsc && rm -rf tsconfig.tsbuildinfo",
     "db:migrate": "npx prisma migrate dev && npx prisma generate",
     "db:reset": "npx prisma migrate dev && npx prisma generate && npx prisma migrate reset",
     "prepare": "husky install",
